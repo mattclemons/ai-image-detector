@@ -8,7 +8,8 @@ import io
 app = Flask(__name__, template_folder="templates")
 
 # Load the model and processor
-MODEL_NAME = "umm-maybe/AI-image-detector"
+MODEL_NAME = "Organika/sdxl-detector"
+#MODEL_NAME = "umm-maybe/AI-image-detector"
 model = AutoModelForImageClassification.from_pretrained(MODEL_NAME)
 processor = AutoProcessor.from_pretrained(MODEL_NAME)
 

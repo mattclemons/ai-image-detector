@@ -8,5 +8,6 @@ services:
     ports:
       - "5002:5002"
     volumes:
-      - ./files:/app
+      - ./files:/app/files
+    command: ["python", "/app/files/app.py"]
     restart: unless-stopped
