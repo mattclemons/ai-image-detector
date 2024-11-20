@@ -1,0 +1,12 @@
+services:
+  ai-image-detector:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ai-image-detector
+    container_name: ai-image-detector
+    ports:
+      - "5002:5002"
+    volumes:
+      - ./files:/app
+    restart: unless-stopped

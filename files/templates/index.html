@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Authenticity Detector</title>
+</head>
+<body>
+    <h1>AI Image Detector</h1>
+    <form id="upload-form" action="/analyze" method="POST" enctype="multipart/form-data">
+        <!-- File upload -->
+        <label for="file">Upload Image:</label>
+        <input type="file" name="file" id="file"><br><br>
+        
+        <!-- URL input -->
+        <label for="url">Or provide Image URL:</label>
+        <input type="text" name="url" id="url" placeholder="Enter image URL"><br><br>
+        
+        <!-- Submit button -->
+        <button type="submit">Analyze</button>
+    </form>
+    <div id="result"></div>
+</body>
+</html>

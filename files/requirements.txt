@@ -1,0 +1,8 @@
+flask
+torch
+torchvision
+transformers
+huggingface-hub
+pillow
+requests
+timm
